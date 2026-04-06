@@ -3,94 +3,97 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CIEF | Inteligencia Empresarial</title>
+<title>CIEF | Consultoría Empresarial</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #f5f7fa;
-    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    background: #ffffff;
+    color: #1c1c1c;
 }
 
 /* HEADER */
 header {
-    position: fixed;
-    width: 100%;
-    background: rgba(10,31,68,0.95);
-    padding: 15px 40px;
+    background: #0a1f44;
+    color: white;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
 }
 
 .logo {
-    height: 50px;
+    height: 45px;
     mix-blend-mode: multiply;
 }
 
-/* NAV */
 nav a {
     color: white;
-    margin-left: 20px;
+    margin-left: 30px;
     text-decoration: none;
+    font-size: 14px;
 }
 
 /* HERO */
 .hero {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(rgba(10,31,68,0.85), rgba(10,31,68,0.85)),
-    url('https://images.unsplash.com/photo-1551434678-e076c223a692');
-    background-size: cover;
-    color: white;
+    padding: 120px 50px;
+    background: #f4f6f9;
 }
 
-.hero-logo {
-    width: 150px;
-    margin-bottom: 20px;
-    mix-blend-mode: multiply;
+.hero h1 {
+    font-size: 42px;
+    max-width: 700px;
 }
 
-.section {
-    padding: 80px 40px;
-    text-align: center;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-}
-
-.dark {
-    background: #0a1f44;
-    color: white;
+.hero p {
+    margin-top: 15px;
+    max-width: 600px;
+    color: #555;
 }
 
 .btn {
-    background: #ff9900;
-    padding: 12px 25px;
-    border-radius: 30px;
+    margin-top: 20px;
+    display: inline-block;
+    background: #0a1f44;
     color: white;
+    padding: 12px 25px;
     text-decoration: none;
 }
 
+/* SECCIONES */
+.section {
+    padding: 80px 50px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+}
+
+.card {
+    border-left: 4px solid #0a1f44;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+/* DESTACADO */
+.highlight {
+    background: #0a1f44;
+    color: white;
+    padding: 60px 50px;
+}
+
+/* FOOTER */
 footer {
     background: #0a1f44;
     color: white;
@@ -108,32 +111,34 @@ footer {
     <nav>
         <a href="#nosotros">Nosotros</a>
         <a href="#servicios">Servicios</a>
-        <a href="#ec0383">Certificación</a>
+        <a href="#certificacion">Certificación</a>
         <a href="#contacto">Contacto</a>
     </nav>
 </header>
 
 <section class="hero">
-    <div>
-        <img src="logo.png" class="hero-logo">
-        <h1>El talento se convierte en estrategia</h1>
-        <p>Consultoría, formación y cumplimiento normativo con impacto real</p>
-        <a href="#" class="btn">Solicitar diagnóstico</a>
-    </div>
+    <h1>Centro de Inteligencia Empresarial y Formación Profesional</h1>
+    <p>
+        Impulsamos decisiones inteligentes en emprendedores, pymes y organizaciones en crecimiento mediante consultoría, formación y cumplimiento normativo.
+    </p>
+    <a href="#" class="btn">Solicitar diagnóstico</a>
 </section>
 
-<section class="section dark">
-    <h2>Propuesta Única de Valor</h2>
-    <p><strong>Pensamos, formamos y prevenimos antes de que el problema cueste dinero.</strong></p>
+<section class="highlight">
+    <h2>Propuesta de Valor</h2>
+    <p>
+        CIEF no vende cursos ni asesorías aisladas. Ofrece soluciones integrales basadas en inteligencia, prevención y formación aplicada.
+    </p>
+    <strong>Pensamos, formamos y prevenimos antes de que el problema cueste dinero.</strong>
 </section>
 
 <section class="section" id="nosotros">
-    <h2>Sobre CIEF</h2>
+    <h2>Quiénes somos</h2>
     <p>
-        Centro de consultoría, capacitación y evaluación profesional enfocado en desarrollo empresarial, cumplimiento normativo y formación estratégica.
+        Somos un centro especializado en consultoría, capacitación y evaluación profesional enfocado en desarrollo empresarial, cumplimiento normativo y formación estratégica.
     </p>
 
-    <div class="cards">
+    <div class="grid">
         <div class="card">
             <h3>Misión</h3>
             <p>Impulsar decisiones inteligentes alineando talento, procesos y normatividad.</p>
@@ -141,69 +146,58 @@ footer {
 
         <div class="card">
             <h3>Visión</h3>
-            <p>Ser referente regional en inteligencia empresarial y formación profesional.</p>
+            <p>Ser referente regional en inteligencia empresarial con impacto medible.</p>
         </div>
-    </div>
-</section>
-
-<section class="section">
-    <h2>Valores</h2>
-    <div class="cards">
-        <div class="card">Ética</div>
-        <div class="card">Profesionalismo</div>
-        <div class="card">Innovación aplicada</div>
-        <div class="card">Enfoque preventivo</div>
-        <div class="card">Aprendizaje continuo</div>
-        <div class="card">Responsabilidad social</div>
     </div>
 </section>
 
 <section class="section" id="servicios">
-    <h2>Servicios Integrales</h2>
+    <h2>Servicios</h2>
 
-    <div class="cards">
+    <div class="grid">
         <div class="card">
             <h3>Formación y Certificación</h3>
-            <p>Estándares CONOCER con enfoque práctico.</p>
+            <p>Estándares de competencia CONOCER con aplicación práctica.</p>
         </div>
 
         <div class="card">
             <h3>Consultoría Empresarial</h3>
-            <p>Diagnóstico, mejora de procesos y gestión estratégica.</p>
+            <p>Diagnóstico, organización y mejora de procesos.</p>
         </div>
 
         <div class="card">
-            <h3>Estrategia Legal</h3>
-            <p>Prevención laboral y cumplimiento normativo.</p>
+            <h3>Estrategia Legal Preventiva</h3>
+            <p>Cumplimiento normativo y prevención de riesgos laborales.</p>
         </div>
 
         <div class="card">
             <h3>Seguridad Social</h3>
-            <p>Estrategias de pensión y retiro IMSS.</p>
+            <p>Planeación de pensiones y estrategias de retiro.</p>
         </div>
     </div>
 </section>
 
-<section class="section dark" id="ec0383">
+<section class="section" id="certificacion">
     <h2>Certificación EC0383</h2>
-    <p><strong>Operación de nóminas</strong></p>
-    <p>Precio: $5,500 + IVA</p>
 
-    <div class="cards">
+    <div class="grid">
         <div class="card">Alineación (capacitación)</div>
         <div class="card">Evaluación</div>
-        <div class="card">Certificado</div>
+        <div class="card">Certificado oficial</div>
         <div class="card">Capacitación en CONTPAQi y SUA</div>
     </div>
+
+    <p><strong>Inversión: $5,500 + IVA</strong></p>
 </section>
 
 <section class="section">
     <h2>Metodología</h2>
-    <div class="cards">
-        <div class="card">Diagnóstico</div>
-        <div class="card">Intervención</div>
-        <div class="card">Capacitación</div>
-        <div class="card">Evaluación</div>
+
+    <div class="grid">
+        <div class="card">Diagnóstico inicial</div>
+        <div class="card">Intervención estratégica</div>
+        <div class="card">Capacitación aplicada</div>
+        <div class="card">Evaluación de resultados</div>
     </div>
 </section>
 
@@ -215,7 +209,6 @@ footer {
 
 <footer>
     <p>Centro de Inteligencia Empresarial y Formación Profesional (CIEF)</p>
-    <p>© 2026 Todos los derechos reservados</p>
 </footer>
 
 </body>
