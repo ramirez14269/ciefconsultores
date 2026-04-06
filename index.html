@@ -20,8 +20,7 @@ body {
 header {
     position: fixed;
     width: 100%;
-    background: rgba(10,31,68,0.9);
-    backdrop-filter: blur(10px);
+    background: rgba(10,31,68,0.95);
     color: white;
     padding: 15px 40px;
     display: flex;
@@ -32,22 +31,12 @@ header {
 
 .logo {
     height: 50px;
-    transition: 0.3s;
-}
-
-.logo:hover {
-    transform: scale(1.05);
 }
 
 nav a {
     color: white;
-    margin-left: 25px;
+    margin-left: 20px;
     text-decoration: none;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #ff9900;
 }
 
 /* HERO */
@@ -57,40 +46,19 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(rgba(10,31,68,0.8), rgba(10,31,68,0.8)),
+    background: linear-gradient(rgba(10,31,68,0.85), rgba(10,31,68,0.85)),
     url('https://images.unsplash.com/photo-1551434678-e076c223a692');
     background-size: cover;
     color: white;
 }
 
 .hero-logo {
-    width: 180px;
+    width: 160px;
     margin-bottom: 20px;
-    animation: fadeUp 1s ease;
 }
 
 .hero h1 {
-    font-size: 45px;
-    animation: fadeUp 1s ease;
-}
-
-.hero p {
-    margin-top: 15px;
-    animation: fadeUp 1.5s ease;
-}
-
-.btn {
-    margin-top: 25px;
-    background: #ff9900;
-    padding: 12px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    transform: scale(1.05);
+    font-size: 42px;
 }
 
 /* SECTIONS */
@@ -99,7 +67,7 @@ nav a:hover {
     text-align: center;
 }
 
-/* CARDS */
+/* GRID */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
@@ -111,50 +79,31 @@ nav a:hover {
     background: white;
     padding: 25px;
     border-radius: 15px;
-    transition: 0.3s;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
-.card:hover {
-    transform: translateY(-10px);
-}
-
-/* PUV */
-.puv {
+/* DARK SECTION */
+.dark {
     background: #0a1f44;
     color: white;
 }
 
-/* ANIMACIONES */
-.hidden {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 0.8s;
-}
-
-.show {
-    opacity: 1;
-    transform: translateY(0);
+/* BOTÓN */
+.btn {
+    margin-top: 20px;
+    background: #ff9900;
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
 }
 
 /* FOOTER */
 footer {
     background: #0a1f44;
     color: white;
-    padding: 20px;
     text-align: center;
-}
-
-/* KEYFRAMES */
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    padding: 20px;
 }
 
 </style>
@@ -163,63 +112,91 @@ footer {
 <body>
 
 <header>
-    <img src="logo.png" alt="CIEF Logo" class="logo">
+    <img src="logo.png" class="logo">
     <nav>
         <a href="#">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
         <a href="#servicios">Servicios</a>
-        <a href="#metodo">Metodología</a>
+        <a href="#valores">Valores</a>
         <a href="#contacto">Contacto</a>
     </nav>
 </header>
 
 <section class="hero">
     <div>
-        <img src="logo.png" alt="CIEF Logo" class="hero-logo">
+        <img src="logo.png" class="hero-logo">
         <h1>El talento se convierte en estrategia</h1>
-        <p>Impulsamos decisiones inteligentes en emprendedores, pymes y organizaciones en crecimiento</p>
+        <p>Inteligencia empresarial, formación estratégica y cumplimiento normativo</p>
         <a href="#" class="btn">Solicitar diagnóstico</a>
     </div>
 </section>
 
-<section class="section puv hidden">
-    <h2>Propuesta de Valor</h2>
-    <p>
-        No vendemos cursos ni asesorías aisladas. 
-        Ofrecemos soluciones integrales basadas en inteligencia, prevención y formación aplicada.
-    </p>
+<section class="section dark">
+    <h2>Propuesta Única de Valor</h2>
+    <p>No vendemos cursos ni asesorías aisladas.</p>
     <p><strong>Pensamos, formamos y prevenimos antes de que el problema cueste dinero.</strong></p>
 </section>
 
-<section class="section hidden" id="servicios">
+<section class="section" id="nosotros">
+    <h2>Sobre CIEF</h2>
+    <p>
+        Somos un centro de consultoría, capacitación y evaluación profesional que impulsa la toma de decisiones inteligentes en emprendedores, pymes y organizaciones en crecimiento, alineando talento, procesos y normatividad para generar desarrollo sostenible.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Misión</h3>
+            <p>Impulsar decisiones inteligentes mediante consultoría, formación y evaluación profesional con impacto real.</p>
+        </div>
+
+        <div class="card">
+            <h3>Visión</h3>
+            <p>Ser referente regional en inteligencia empresarial y formación estratégica.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="servicios">
     <h2>Soluciones CIEF</h2>
 
     <div class="cards">
-
         <div class="card">
             <h3>Formación y Certificación</h3>
-            <p>Capacitación alineada a estándares de competencia (CONOCER).</p>
+            <p>Basada en estándares CONOCER y competencias laborales.</p>
         </div>
 
         <div class="card">
             <h3>Consultoría Empresarial</h3>
-            <p>Optimización de procesos y gestión estratégica.</p>
+            <p>Gestión estratégica, mejora de procesos y organización empresarial.</p>
         </div>
 
         <div class="card">
-            <h3>Estrategia Legal Preventiva</h3>
-            <p>Cumplimiento laboral y prevención de riesgos.</p>
+            <h3>Estrategia Legal</h3>
+            <p>Prevención de riesgos laborales y cumplimiento normativo.</p>
         </div>
 
         <div class="card">
             <h3>Seguridad Social</h3>
-            <p>Planeación de retiro y estrategias IMSS.</p>
+            <p>Planeación de pensiones y estrategias de retiro.</p>
         </div>
-
     </div>
 </section>
 
-<section class="section hidden" id="metodo">
-    <h2>Metodología de Trabajo</h2>
+<section class="section dark" id="valores">
+    <h2>Valores CIEF</h2>
+
+    <div class="cards">
+        <div class="card">Ética</div>
+        <div class="card">Profesionalismo</div>
+        <div class="card">Innovación aplicada</div>
+        <div class="card">Enfoque preventivo</div>
+        <div class="card">Aprendizaje continuo</div>
+        <div class="card">Responsabilidad social</div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Metodología</h2>
 
     <div class="cards">
         <div class="card">Diagnóstico</div>
@@ -229,9 +206,9 @@ footer {
     </div>
 </section>
 
-<section class="section hidden" id="contacto">
+<section class="section" id="contacto">
     <h2>Contacto</h2>
-    <p>Agenda tu diagnóstico estratégico y comienza a tomar decisiones inteligentes</p>
+    <p>Agenda tu diagnóstico estratégico</p>
     <a href="#" class="btn">Enviar mensaje</a>
 </section>
 
@@ -239,21 +216,6 @@ footer {
     <p>Centro de Inteligencia Empresarial y Formación Profesional (CIEF)</p>
     <p>© 2026 Todos los derechos reservados</p>
 </footer>
-
-<script>
-
-// ANIMACIÓN SCROLL
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            entry.target.classList.add('show');
-        }
-    });
-});
-
-document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
-
-</script>
 
 </body>
 </html>
