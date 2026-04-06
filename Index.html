@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CIEF | Centro de Inteligencia Empresarial</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: #0a1f44;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 18px;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(10,31,68,0.85), rgba(10,31,68,0.85)),
+    url('https://images.unsplash.com/photo-1551434678-e076c223a692');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 38px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.btn {
+    margin-top: 25px;
+    background: #ff9900;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* SECTIONS */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+
+/* PUV */
+.puv {
+    background: #0a1f44;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background: #0a1f44;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>CIEF</h1>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#metodo">Metodología</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>El talento se convierte en estrategia</h2>
+    <p>Impulsamos decisiones inteligentes en emprendedores, pymes y organizaciones en crecimiento</p>
+    <a href="#" class="btn">Solicitar diagnóstico</a>
+</section>
+
+<section class="section puv">
+    <h2>Propuesta de Valor</h2>
+    <p>
+        No vendemos cursos ni asesorías aisladas.
+        Ofrecemos soluciones integrales basadas en inteligencia, prevención y formación aplicada.
+    </p>
+    <p><strong>Pensamos, formamos y prevenimos antes de que el problema cueste dinero.</strong></p>
+</section>
+
+<section class="section" id="servicios">
+    <h2>Nuestras Soluciones</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Formación y Certificación</h3>
+            <p>Capacitación alineada a estándares de competencia (CONOCER) con aplicación práctica inmediata.</p>
+        </div>
+
+        <div class="card">
+            <h3>Consultoría Empresarial</h3>
+            <p>Diagnóstico, organización y mejora de procesos para aumentar la competitividad.</p>
+        </div>
+
+        <div class="card">
+            <h3>Estrategia Legal Preventiva</h3>
+            <p>Prevención de riesgos laborales, cumplimiento normativo y documentación empresarial.</p>
+        </div>
+
+        <div class="card">
+            <h3>Seguridad Social y Retiro</h3>
+            <p>Estrategias de pensión, IMSS y planeación financiera para el retiro.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section" id="metodo">
+    <h2>Metodología de Trabajo</h2>
+
+    <div class="cards">
+        <div class="card"><h3>1. Diagnóstico</h3></div>
+        <div class="card"><h3>2. Intervención</h3></div>
+        <div class="card"><h3>3. Capacitación</h3></div>
+        <div class="card"><h3>4. Evaluación</h3></div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>¿Por qué CIEF?</h2>
+
+    <div class="cards">
+        <div class="card">Soluciones integrales, no aisladas</div>
+        <div class="card">Enfoque preventivo</div>
+        <div class="card">Impacto medible</div>
+        <div class="card">Acompañamiento real</div>
+    </div>
+</section>
+
+<section class="section" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>Agenda un diagnóstico y empieza a tomar decisiones estratégicas</p>
+    <a href="#" class="btn">Enviar mensaje</a>
+</section>
+
+<footer>
+    <p>Centro de Inteligencia Empresarial y Formación Profesional (CIEF)</p>
+    <p>© 2026 Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
