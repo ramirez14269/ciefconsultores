@@ -21,7 +21,6 @@ header {
     position: fixed;
     width: 100%;
     background: rgba(10,31,68,0.95);
-    color: white;
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
@@ -31,8 +30,10 @@ header {
 
 .logo {
     height: 50px;
+    mix-blend-mode: multiply;
 }
 
+/* NAV */
 nav a {
     color: white;
     margin-left: 20px;
@@ -53,21 +54,16 @@ nav a {
 }
 
 .hero-logo {
-    width: 160px;
+    width: 150px;
     margin-bottom: 20px;
+    mix-blend-mode: multiply;
 }
 
-.hero h1 {
-    font-size: 42px;
-}
-
-/* SECTIONS */
 .section {
     padding: 80px 40px;
     text-align: center;
 }
 
-/* GRID */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
@@ -82,15 +78,12 @@ nav a {
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
-/* DARK SECTION */
 .dark {
     background: #0a1f44;
     color: white;
 }
 
-/* BOTÓN */
 .btn {
-    margin-top: 20px;
     background: #ff9900;
     padding: 12px 25px;
     border-radius: 30px;
@@ -98,12 +91,11 @@ nav a {
     text-decoration: none;
 }
 
-/* FOOTER */
 footer {
     background: #0a1f44;
     color: white;
-    text-align: center;
     padding: 20px;
+    text-align: center;
 }
 
 </style>
@@ -114,10 +106,9 @@ footer {
 <header>
     <img src="logo.png" class="logo">
     <nav>
-        <a href="#">Inicio</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#servicios">Servicios</a>
-        <a href="#valores">Valores</a>
+        <a href="#ec0383">Certificación</a>
         <a href="#contacto">Contacto</a>
     </nav>
 </header>
@@ -126,65 +117,37 @@ footer {
     <div>
         <img src="logo.png" class="hero-logo">
         <h1>El talento se convierte en estrategia</h1>
-        <p>Inteligencia empresarial, formación estratégica y cumplimiento normativo</p>
+        <p>Consultoría, formación y cumplimiento normativo con impacto real</p>
         <a href="#" class="btn">Solicitar diagnóstico</a>
     </div>
 </section>
 
 <section class="section dark">
     <h2>Propuesta Única de Valor</h2>
-    <p>No vendemos cursos ni asesorías aisladas.</p>
     <p><strong>Pensamos, formamos y prevenimos antes de que el problema cueste dinero.</strong></p>
 </section>
 
 <section class="section" id="nosotros">
     <h2>Sobre CIEF</h2>
     <p>
-        Somos un centro de consultoría, capacitación y evaluación profesional que impulsa la toma de decisiones inteligentes en emprendedores, pymes y organizaciones en crecimiento, alineando talento, procesos y normatividad para generar desarrollo sostenible.
+        Centro de consultoría, capacitación y evaluación profesional enfocado en desarrollo empresarial, cumplimiento normativo y formación estratégica.
     </p>
 
     <div class="cards">
         <div class="card">
             <h3>Misión</h3>
-            <p>Impulsar decisiones inteligentes mediante consultoría, formación y evaluación profesional con impacto real.</p>
+            <p>Impulsar decisiones inteligentes alineando talento, procesos y normatividad.</p>
         </div>
 
         <div class="card">
             <h3>Visión</h3>
-            <p>Ser referente regional en inteligencia empresarial y formación estratégica.</p>
+            <p>Ser referente regional en inteligencia empresarial y formación profesional.</p>
         </div>
     </div>
 </section>
 
-<section class="section" id="servicios">
-    <h2>Soluciones CIEF</h2>
-
-    <div class="cards">
-        <div class="card">
-            <h3>Formación y Certificación</h3>
-            <p>Basada en estándares CONOCER y competencias laborales.</p>
-        </div>
-
-        <div class="card">
-            <h3>Consultoría Empresarial</h3>
-            <p>Gestión estratégica, mejora de procesos y organización empresarial.</p>
-        </div>
-
-        <div class="card">
-            <h3>Estrategia Legal</h3>
-            <p>Prevención de riesgos laborales y cumplimiento normativo.</p>
-        </div>
-
-        <div class="card">
-            <h3>Seguridad Social</h3>
-            <p>Planeación de pensiones y estrategias de retiro.</p>
-        </div>
-    </div>
-</section>
-
-<section class="section dark" id="valores">
-    <h2>Valores CIEF</h2>
-
+<section class="section">
+    <h2>Valores</h2>
     <div class="cards">
         <div class="card">Ética</div>
         <div class="card">Profesionalismo</div>
@@ -195,9 +158,47 @@ footer {
     </div>
 </section>
 
+<section class="section" id="servicios">
+    <h2>Servicios Integrales</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Formación y Certificación</h3>
+            <p>Estándares CONOCER con enfoque práctico.</p>
+        </div>
+
+        <div class="card">
+            <h3>Consultoría Empresarial</h3>
+            <p>Diagnóstico, mejora de procesos y gestión estratégica.</p>
+        </div>
+
+        <div class="card">
+            <h3>Estrategia Legal</h3>
+            <p>Prevención laboral y cumplimiento normativo.</p>
+        </div>
+
+        <div class="card">
+            <h3>Seguridad Social</h3>
+            <p>Estrategias de pensión y retiro IMSS.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section dark" id="ec0383">
+    <h2>Certificación EC0383</h2>
+    <p><strong>Operación de nóminas</strong></p>
+    <p>Precio: $5,500 + IVA</p>
+
+    <div class="cards">
+        <div class="card">Alineación (capacitación)</div>
+        <div class="card">Evaluación</div>
+        <div class="card">Certificado</div>
+        <div class="card">Capacitación en CONTPAQi y SUA</div>
+    </div>
+</section>
+
 <section class="section">
     <h2>Metodología</h2>
-
     <div class="cards">
         <div class="card">Diagnóstico</div>
         <div class="card">Intervención</div>
