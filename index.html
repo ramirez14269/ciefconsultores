@@ -26,7 +26,17 @@ header {
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     z-index: 1000;
+}
+
+.logo {
+    height: 50px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
 
 nav a {
@@ -53,8 +63,14 @@ nav a:hover {
     color: white;
 }
 
+.hero-logo {
+    width: 180px;
+    margin-bottom: 20px;
+    animation: fadeUp 1s ease;
+}
+
 .hero h1 {
-    font-size: 50px;
+    font-size: 45px;
     animation: fadeUp 1s ease;
 }
 
@@ -109,7 +125,7 @@ nav a:hover {
     color: white;
 }
 
-/* ANIMACIÓN SCROLL */
+/* ANIMACIONES */
 .hidden {
     opacity: 0;
     transform: translateY(40px);
@@ -147,7 +163,7 @@ footer {
 <body>
 
 <header>
-    <h3>CIEF</h3>
+    <img src="logo.png" alt="CIEF Logo" class="logo">
     <nav>
         <a href="#">Inicio</a>
         <a href="#servicios">Servicios</a>
@@ -158,30 +174,52 @@ footer {
 
 <section class="hero">
     <div>
+        <img src="logo.png" alt="CIEF Logo" class="hero-logo">
         <h1>El talento se convierte en estrategia</h1>
-        <p>Impulsamos decisiones inteligentes en empresas en crecimiento</p>
+        <p>Impulsamos decisiones inteligentes en emprendedores, pymes y organizaciones en crecimiento</p>
         <a href="#" class="btn">Solicitar diagnóstico</a>
     </div>
 </section>
 
 <section class="section puv hidden">
     <h2>Propuesta de Valor</h2>
-    <p>No vendemos cursos. Creamos soluciones estratégicas.</p>
+    <p>
+        No vendemos cursos ni asesorías aisladas. 
+        Ofrecemos soluciones integrales basadas en inteligencia, prevención y formación aplicada.
+    </p>
+    <p><strong>Pensamos, formamos y prevenimos antes de que el problema cueste dinero.</strong></p>
 </section>
 
 <section class="section hidden" id="servicios">
-    <h2>Servicios</h2>
+    <h2>Soluciones CIEF</h2>
 
     <div class="cards">
-        <div class="card">Consultoría Empresarial</div>
-        <div class="card">Formación y Certificación</div>
-        <div class="card">Estrategia Legal Preventiva</div>
-        <div class="card">Seguridad Social</div>
+
+        <div class="card">
+            <h3>Formación y Certificación</h3>
+            <p>Capacitación alineada a estándares de competencia (CONOCER).</p>
+        </div>
+
+        <div class="card">
+            <h3>Consultoría Empresarial</h3>
+            <p>Optimización de procesos y gestión estratégica.</p>
+        </div>
+
+        <div class="card">
+            <h3>Estrategia Legal Preventiva</h3>
+            <p>Cumplimiento laboral y prevención de riesgos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Seguridad Social</h3>
+            <p>Planeación de retiro y estrategias IMSS.</p>
+        </div>
+
     </div>
 </section>
 
 <section class="section hidden" id="metodo">
-    <h2>Metodología</h2>
+    <h2>Metodología de Trabajo</h2>
 
     <div class="cards">
         <div class="card">Diagnóstico</div>
@@ -193,17 +231,18 @@ footer {
 
 <section class="section hidden" id="contacto">
     <h2>Contacto</h2>
-    <p>Agenda tu diagnóstico estratégico</p>
+    <p>Agenda tu diagnóstico estratégico y comienza a tomar decisiones inteligentes</p>
     <a href="#" class="btn">Enviar mensaje</a>
 </section>
 
 <footer>
-    <p>© 2026 CIEF - Todos los derechos reservados</p>
+    <p>Centro de Inteligencia Empresarial y Formación Profesional (CIEF)</p>
+    <p>© 2026 Todos los derechos reservados</p>
 </footer>
 
 <script>
 
-// ANIMACIÓN AL HACER SCROLL
+// ANIMACIÓN SCROLL
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
